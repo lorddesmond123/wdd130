@@ -18,6 +18,12 @@ nav {
     display: block;
 }
 
+nav a {
+    color: white;
+    display: block;
+    padding: 0.5rem;
+}
+
 header {
     background-color: #2c3e50;
     color: white;
@@ -95,7 +101,8 @@ ul {
 
 footer {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 5px;
+    border-top: 2px;
     padding: 1.5rem;
     background-color: #2c3e50;
     color: white;
@@ -104,4 +111,5 @@ footer {
     margin-left: auto;
     margin-right: auto;
     font-size: 0.95rem;
+    text-align: center;
 }
