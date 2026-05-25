@@ -81,19 +81,19 @@ aside {
 aside img {
     float: right;
     width: 200px;
-    height: auto;
-    border-radius: 8px margin: 0 0 1rem 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid grey;
+    margin: 0 0 15px 15px;
+
 }
 
 aside h2 {
     position: absolute;
-    top: 47px;
-    left: 150px;
+    top: 40px;
+    left: 140px;
     background-color: rgb(0, 0, 0, 0.7);
     color: white;
-    padding: 0.3rem 0.8rem,
-        border-radius: 4px;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 p {
