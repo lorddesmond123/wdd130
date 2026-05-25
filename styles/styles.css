@@ -74,12 +74,11 @@ h2 {
 
 aside {
     width: 20em;
-    text-align: center;
     position: relative;
 }
 
 aside img {
-    float: top;
+    float: right;
     width: 200px;
     border: 2px solid grey;
     margin: 0 0 15px 15px;
@@ -88,8 +87,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 40px;
-    left: 140px;
+    top: 50px;
+    left: 150px;
     background-color: rgb(0, 0, 0, 0.7);
     color: white;
     padding: 0.3rem 0.8rem;
