@@ -79,7 +79,7 @@ aside {
 }
 
 aside img {
-    float: center;
+    float: top;
     width: 200px;
     border: 2px solid grey;
     margin: 0 0 15px 15px;
