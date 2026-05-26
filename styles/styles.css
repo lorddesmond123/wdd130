@@ -55,13 +55,13 @@ main {
 
 main img {
     float: right;
-    width: 200px;
+    width: 150px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 30px gray;
     margin: 0 0 1rem 1rem;
     border: 2px solid grey;
-    padding: 3px;
+    padding: 2px;
 
 }
 
@@ -74,6 +74,7 @@ h2 {
 
 aside {
     width: 20em;
+    text-align: center;
     position: relative;
 }
 
@@ -82,12 +83,12 @@ aside img {
     width: 200px;
     border: 2px solid grey;
     margin: 0 0 15px 15px;
-
+    height: auto;
 }
 
 aside h2 {
     position: absolute;
-    top: 50px;
+    top: 67px;
     left: 150px;
     background-color: rgb(0, 0, 0, 0.7);
     color: white;
@@ -120,10 +121,14 @@ footer {
 /*class selectors*/
 .box {
     margin: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #eee;
+    color: #000;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.indent {
+    padding-left: 1rem
 }
