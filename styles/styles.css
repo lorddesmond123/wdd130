@@ -57,10 +57,9 @@ main img {
     float: right;
     width: 150px;
     height: auto;
-    border-radius: 8px;
     box-shadow: 0 0 30px gray;
     margin: 0 0 1rem 1rem;
-    border: 2px solid grey;
+    border: 1px solid grey;
     padding: 2px;
 
 }
@@ -88,8 +87,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 67px;
-    left: 150px;
+    top: 100px;
+    left: 200%;
     background-color: rgb(0, 0, 0, 0.7);
     color: white;
     padding: 0.3rem 0.8rem;
