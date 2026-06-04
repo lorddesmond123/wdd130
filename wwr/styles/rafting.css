@@ -1,6 +1,8 @@
 :root {
     --primary-color: #055a05;
     /*forest green*/
+    --secondary-color: #0a0a0a;
+    /*black*/
     --accent1-color: #264653;
     /* dark slate blue */
     --accent2-color: #e9c46a;
@@ -76,7 +78,7 @@ h1 {
     position: absolute;
     top: 100px;
     background-color: var(--accent2-color);
-    color: black;
+    color: var(--secondary-color);
 }
 
 .hero article img {
