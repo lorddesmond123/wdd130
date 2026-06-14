@@ -1,14 +1,730 @@
-< !DOCTYPE html > <html lang="en" > <head > <link rel="stylesheet" href="styles/rafting.css" > <meta name="author" content="Henga Liambee Desmond" > <meta name="description"
-content="Experience thrilling white water rafting in Nigeria with Reefs White Water Rafting. Safe, expert-guided adventures that build teamwork and reconnect you with nature." > <meta charset="UTF-8" > <meta name="viewport" content="width=device-width, initial-scale=1.0" > <title > About Us Reefs White Water Rafting Comapny</title > </head > <body > <header > <img class="grid-1" src="images/logo.jpg" alt="Logo of Rafting Website" > <nav class="grid-2" > <a href="index.html" > Home</a > <a href="about.html" > About Us</a > <a href="trips.html" > Trips</a > <a href="contact.html" > Contact Us</a > . </nav > </header > <main > <div class="hero" > <img src="images/hero-image.jpg"
-alt="Hero image showing people rafting on a black river" > <h1 class="h1" > Reefs White Water Rafting</h1 > <article > <img src="images/employees.jpg"
-alt="picture showing  happy client of our rafting company" > <p > We exist to reconnect people with the raw power and beauty of nature through unforgettable whitewater rafting adventures. Our mission is to deliver world-class whitewater rafting experiences that prioritize safety,
-fun,
-and environmental respect. We believe the river is a teacher — it builds courage,
-demands respect,
-and rewards teamwork. </p > </article > </div > <section class="history" > <div class="text" > <p > Founded in 2012 by a group of passionate river guides and adventure enthusiasts,
-Reefs White Water Rafting was born on the banks of the roaring Niger in Nigeria. </p > </div > <div class="history-box" > <h2 class="h2" > History</h2 > <img src="images/rafting3.jpg" alt="Whitewater Rafting History"
-class="history-image" > </div > <div class="text" > <p > What started as a weekend hobby among friends who loved chasing rapids quickly grew into a mission to share the thrill of whitewater rafting with others. </p > . </div > </section > <section class="adventure" > <h2 class="h2" > Adventure Awaits You</h2 > <div class="adventure-grid" > <figure > <img src="images/rafting1.jpg" alt="Los Dientes del Diablo" > <figcaption > Los Dientes del Diablo</figcaption > </figure > <figure > <img src="images/rafting2.jpg" alt="Big Mallard" > <figcaption > Big Mallard</figcaption > </figure > <figure > <img src="images/rafting3.jpg" alt="Half Day Adventure" > <figcaption > Half Day Adventure</figcaption > </figure > <figure > <img src="images/rafting4.jpg" alt="Full Day Thrill" > <figcaption > Full Day Thrill</figcaption > </figure > <figure > <img src="images/rafting5.jpg" alt="Family Float" > <figcaption > Family Float</figcaption > </figure > </div > </section > </main > <footer class="footer-content" > <p > &copy;
-2026 Reefs White Water Rafting,
-Henga Liambee Desmond</p > <nav class="socialmedia" > <a href="https://facebook.com" > <img src="images/facebook.svg" alt="Facebook Icon" > </a > <a href="https://instagram.com" > <img src="images/instagram.svg"
-alt="Instagram Icon" > </a > <a href="ttps://linkedin.com" > <img src="images/linkedin.svg" alt="Linkedin Icon" > </a > </nav > </footer > </body > </html > order-radius: 8px;
+:root {
+    --primary-color: #204653;
+    --secondary-color: #222;
+    --accent1-color: #5A3AB0;
+    --accent2-color: #e9c46a;
+    --heading-font: 'Playfair Display', Georgia, serif;
+    --body-font: 'Satoshi', system-ui, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+
+main,
+footer,
+header,
+article,
+.contact-h1,
+.serve-section {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin-left: 6rem;
+    max-height: 100px;
+}
+
+nav {
+    background-color: var(--accent1-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: .4rem .5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    opacity: .8;
+}
+
+.h1,
+.h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.h1 {
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+
+}
+
+.hero article {
+    position: absolute;
+    top: 120px;
+    left: 5%;
+    right: 5%;
+    background-color: var(--accent2-color);
+    padding: 20px 24px;
+    width: 90%;
+    z-index: 2
+}
+
+.hero article img {
+    float: right;
+    width: 140px;
+    margin: 20px 0 15px 20px;
+}
+
+.hero article p {
+    padding-top: 30px;
+    line-height: 1.3;
+    color: var(--secondary-color);
+    font-size: .95rem
+}
+
+.history {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 320px 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.history-text {
+    font-size: 1.15rem;
+    color: #444;
+    line-height: 1.8
+}
+
+.history-box {
+    background-color: var(--primary);
+    color: white;
+    padding: 35px 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(107, 70, 192, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.history-box h2 {
+    font-size: 2rem;
+    margin-bottom: 20px
+}
+
+.history-image {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3)
+}
+
+.adventure {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.adventure .h2 {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin-bottom: 50px
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+figure {
+    margin: 0;
+    background: var(--accent2-color);
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 15px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* Contact us Rules*/
+.contact-main {
+    margin: 40px auto;
+}
+
+.contact-article {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-h1 {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.company-details {
+    font-size: 16px;
+    text-align: center;
+    margin: 40px;
+    padding-bottom: 30px;
+    border-bottom: .4rem solid var(--primary-color);
+}
+
+.company-details p {
+    font-weight: bold;
+}
+
+.map {
+    height: 400px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    box-shadow: -5px 5px 8px var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.map::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background: radial-gradient(circle, #000 40%, transparent 41%);
+    top: 65%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-us-form {
+    padding: 1rem;
+    box-shadow: 5px 5px 5px var(--primary-color);
+}
+
+.contact-us-form .form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.contact-us-form .form-group input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-group .radio-group {
+    margin: 10px 0;
+}
+
+.contact-us-form .radio-group label {
+    display: block;
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+.contact-us-form .checkbox {
+    margin: 15px 0;
+}
+
+/* Serve You Section Of Contact Us page */
+.serve-section {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.serve-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.employees {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.employee {
+    text-align: center;
+    padding: 10px;
+    max-width: 250px;
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.employee-img {
+    width: 120px;
+    height: 120px;
+    background-color: #e5e7eb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*Home Page CSS */
+
+.homepage-h1 {
+    font-size: 3.5em;
+    top: 30vh;
+    padding: 4rem;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.hero-homepage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.homepage-hero-image {
+    height: 100vh;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    gap: 1.2rem;
+    margin: 12rem auto;
+}
+
+.home-div-1 {
+    grid-row: 1 / 3;
+    background-color: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 4rem;
+}
+
+.home-div-2 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    max-height: 480px;
+    margin: 0;
+}
+
+.home-div-3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: var(--accent2-color);
+}
+
+.home-div-4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: var(--accent2-color);
+}
+
+.home-div-1,
+.home-div-2,
+.home-div-3,
+.home-div-4 {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.homepage-form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #eee;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.homepage-form fieldset {
+    display: grid;
+    gap: 1.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 1.5rem;
+    background: white;
+}
+
+.homepage-form legend {
+    color: navy;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 15px;
+    background: white;
+    border-radius: 8px;
+}
+
+.homepage-form .form-item {
+    display: grid;
+    align-items: center;
+    gap: 8px;
+}
+
+.homepage-form .column1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+.homepage-form .column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.homepage-form label {
+    text-align: right;
+    padding-right: 1rem;
+    font-weight: 500;
+}
+
+.homepage-form input,
+select,
+textarea {
+    padding: 0.65rem;
+    font-size: 1.1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.homepage-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.homepage-form input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    justify-self: start;
+    vertical-align: bottom;
+}
+
+button {
+    background-color: rgb(8, 236, 46);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.25rem;
+    border-radius: 6px;
+    cursor: pointer;
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.trip-cta-content {
+    padding: 25px;
+    text-align: center;
+
+}
+
+.trip-cta-content h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.1rem;
+    margin-bottom: 12px;
+}
+
+.trip-cta-content p {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--accent1-color);
+    color: white;
+    padding: 16px 36px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+    margin-bottom: 2rem;
+}
+
+.cta-button:hover {
+    background: #3a2a7a;
+    transform: translateY(-3px);
+}
+
+.feature-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.feature-content {
+    padding: 20px;
+    background: var(--accent2-color);
+    border-radius: 0 0 12px 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.feature-content h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.feature-content p {
+    line-height: 1.6;
+    color: #333;
+    font-size: .8rem;
+    text-align: center;
+}
+
+/*Trips Page CSS */
+.trips-hero {
+    position: relative;
+    width: 100%;
+}
+
+.trips-hero img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.trips-hero h1 {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.2rem;
+    padding: 25px 40px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.trips-cta-banner {
+    background: var(--accent1-color);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin: 2rem 40px;
+    border-radius: 12px;
+}
+
+.trips-cta-banner h2 {
+    margin-bottom: 1rem;
+}
+
+.trips-cta-banner p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.featured-trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 0 2rem;
+}
+
+.featured-trips-grid figure {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.featured-trips-grid figure:hover {
+    transform: translateY(-8px);
+}
+
+.featured-trips-grid img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.featured-trips-grid figcaption {
+    padding: 15px;
+    text-align: center;
+    background: var(--accent2-color);
+    font-weight: 600;
+}
+
+.trip-detail-grid {
+    display: grid;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 2rem;
+}
+
+.trip-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.trip-card img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.trip-card-content h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.trip-card-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Trips Table */
+.trips-table {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 2rem;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.trips-table th {
+    background: var(--accent1-color);
+    color: white;
+    padding: 18px;
+    text-align: left;
+}
+
+.trips-table td {
+    padding: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.trips-table tr:last-child td {
+    border-bottom: none;
+}
+
+.trips-table th:nth-child(2),
+.trips-table th:nth-child(3),
+.trips-table th:nth-child(4),
+.trips-table td:nth-child(2),
+.trips-table td:nth-child(3),
+.trips-table td:nth-child(4) {
+    text-align: center;
+}
+
+footer {
+    color: white;
+    background-color: var(--accent1-color);
+    padding: 30px 2rem;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    background-color: white;
+}
+
+.socialmedia img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.socialmedia a:hover {
+    background: rgba(255, 255, 255, 0.35);
 }
