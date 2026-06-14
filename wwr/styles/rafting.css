@@ -724,7 +724,3 @@ footer {
     object-fit: contain;
     border-radius: 8px;
 }
-
-.socialmedia a:hover {
-    background: rgba(255, 255, 255, 0.35);
-}
